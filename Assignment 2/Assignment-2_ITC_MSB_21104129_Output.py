@@ -12,7 +12,7 @@ The original Sting is: Python is a case sensitive language
 	String after the changes: Python is object oriented language
 	Index of "a" in the given string: 10
 	String after removing the white spaces: Pythonisacasesensitivelanguage
-----------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 String Formatting
 
@@ -24,7 +24,7 @@ Enter your CGPA:9.2
 Hey,  Manobal Singh Bagady  Here!
 My SID is 21104129 
 I am from Electrical Engineering department and my CGPA is 9.2
-----------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 Bitwise Operators
 
@@ -36,27 +36,27 @@ a | b: 58
 a ^ b: 50
 Left shifting both a and b by 2 bits: 224 40
 Right shifting a by 2 and b with 4 bits: 14 0
-----------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 Greatest Number Calculator
 
-Enter your first number:4
+Enter your first number:3
 Enter your second number:9
-Enter your third number:6
+Enter your third number:5
 Greatest of the three numbers entered: 9.0
-----------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 String Comparison
 
 Enter the String:my name
 Yes
-----------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
-Triangle Checker
+Triangle Validity Checker
 
 Enter the Length of first side:3
 Enter the Length of second side:4
 Enter the Length of third side:5
 Yes,Triangle Can Be formed.
-----------------------------------------------------------------------
+--------------------------------------------------------------------------------
 >>> 
