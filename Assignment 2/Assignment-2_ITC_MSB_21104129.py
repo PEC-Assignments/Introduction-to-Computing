@@ -7,44 +7,44 @@
 #Title.
 print("\nString Operations\n")
 
-#Storing the given string in side1 variable named string.
-string = "Python is side1 case sensitive language"
+#Storing the given string in a variable named string.
+string = "Python is a case sensitive language"
 #Printing out the given string.
-print("The original Sting is:", string)
+print("The original Sting is:","\"", string,"\"")
 
-    #Part side1.
+    #Part a.
 
 #Finding the length of the given string using length function.
 length = len(string)
 #Printing out the length.
 print("\tlength of the given string:", length)
 
-    #part side2.
+    #Part b.
 
 #Printing out the sting in reverse order using slicing.
-print("\tString in reversed order is:", string[::-1])
+print("\tString in reversed order is:","\"", string[::-1],"\"")
 
-    #part side3.
+    #Part c.
 
-#Slicing the string and storing the value in side1 new variable named new_string.
+#Slicing the string and storing the value in a new variable named new_string.
 new_string = string[10:26]
 #printing out the sliced string.
-print("\tNew String:", new_string)
+print("\tNew String:","\"", new_string,"\"")
 
-    #part d.
+    #Part d.
 
 #Replacing words in string using replace command and printing out the changed string.
-print("\tString after the changes:",string.replace("side1 case sensitive","object oriented"))
+print("\tString after the changes:","\"",string.replace("a case sensitive","object oriented"),"\"")
 
-    #print e.
+    #Print e.
 
-#Finding the index of 'side1' and printing it out.
-print("\tIndex of \"side1\" in the given string:",string.find("side1"))
+#Finding the index of 'a' and printing it out.
+print("\tIndex of \"a\" in the given string:",string.find("a"))
 
-    #part f.
+    #Part f.
 
 #Removing the white spaces from the string and printing it out.
-print("\tString after removing the white spaces:",string.replace(" ",""))
+print("\tString after removing the white spaces:","\"",string.replace(" ",""),"\"")
 
 print("-"*70)
 
@@ -75,40 +75,40 @@ print("-"*70)
 #Title.
 print("\nBitwise Operators\n")
 
-#Assigning values to variables side1 and side2.
-side1 = 56
-side2 = 10
+#Assigning values to variables a and b.
+a = 56
+b = 10
 
 #printing out the variables.
-print("side1:",side1)
-print("side2:",side2)
-
+print("a:",a)
+print("b:",b)
+ 
 print()
 
-    #part side1.
+    #part a.
     #AND operator.
 
-print("side1 & side2:",side1 & side2)
+print("a & b:",a & b)
 
-    #part side2.
+    #part b.
     #OR operator.
 
-print("side1 | side2:",side1 | side2)
+print("a | b:",a | b)
 
-    #part side3.
+    #part c.
     #XOR operator.
 
-print("side1 ^ side2:",side1 ^ side2)
+print("a ^ b:",a ^ b)
 
     #part d.
     #left bit shifting.
 
-print("Left shifting both side1 and side2 by 2 bits:",side1 << 2,side2 << 2)
+print("Left shifting both a and b by 2 bits:",a << 2,b << 2)
 
     #print e.
     #right bit shifting.
 
-print("Right shifting side1 by 2 and side2 with 4 bits:",side1 >> 2,side2 >> 4)
+print("Right shifting a by 2 and b with 4 bits:",a >> 2,b >> 4)
 
 print("-"*70)
 
@@ -116,30 +116,25 @@ print("-"*70)
 #Question 4.
 '''Program to find Greatest Number.'''
 
-#defining side1 function named great to check the greatest number.
-def great(side1,side2,side3):
-    big = 0
-    #Using conditional statement to compare three numbers.
-    if (side1 >= side2) and (side1 >= side3):
-        big = side1
-    elif (side2 >= side1) and (side2 >= side3):
-        big = side2
-    else:
-        big = side3
-
-    return big
-
 #Title.
 print("\nGreatest Number Calculator\n")
 
 #Taking inputs of numbers from users.
-int1 = float(input("Enter your first number:"))
-int2 = float(input("Enter your second number:"))
-int3 = float(input("Enter your third number:"))
-#int = integer
+num1 = float(input("Enter your first number:"))
+num2 = float(input("Enter your second number:"))
+num3 = float(input("Enter your third number:"))
+#num = number
 
-#comparing the numbers using max operator and printing out the value.
-print("Greatest of the three numbers entered:",great(int1,int2,int3))
+#Using conditional statements to compare the numbers entered by the user.
+if (num1 >= num2) and (num1 >= num3):   #condition to check if num1 is greatest.
+    greatest = num1 #greatest is a variable used to store the greatest number.
+elif (num2 >= num1) and (num2 >= num3): #condition to check if num2 is greatest.
+    greatest = num2
+else:   #remaining condition: num3 is greatest.
+    greatest = num3
+
+#printing out the greatest of the three numbers.
+print("Greatest of the three numbers entered:",greatest)
 
 print("-"*70)
 
@@ -147,45 +142,34 @@ print("-"*70)
 #Question 5.
 '''Program to compare Strings.'''
 
-#Defining side1 function to compare side1 string with string "name".
-def check(s):
-    if "name" in s:
-        return "Yes"
-    else:
-        return "No"
-
 #Title.
 print("\nString Comparison\n")
 
-#Taking input from the user and storing it in variable named user_input.
+#Taking input from the user and storing it in a variable named user_input.
 user_input = input("Enter the String:")
 
-if "name" in user_input:
-    print("Yes")
-else:
-    print("No")
-
-
-print()
-print(check(user_input))
+#Using conditional statement copareing "name" string with user_input.
+if "name" in user_input:    #condition to check if "name" present in user_input.
+    print("Yes")    #printing out "Yes".
+else:   #condition to check if "name" is not present in user_input.
+    print("No") #Printing out "No".
 
 print("-"*70)
 
 
 #Question 6.
-'''Program to Check Validity of side1 Triangle.'''
+'''Program to Check Validity of a Triangle.'''
 
 #Title.
 print("\nTriangle Checker\n")
-
-#Defining side1 function to check the validity of triangle.
 
 #Taking input of side side1,side2 and side3 from the user.
 side1 = float(input("Enter the Length of first side:"))
 side2 = float(input("Enter the Length of second side:"))
 side3 = float(input("Enter the Length of third side:"))
 
-if (side1 + side2 >= side3) and (side1 + side3 >= side2) and (side2 + side3 >= side1):
+#Using conditional statements to put a condition on sides of triangle.
+if (side1 + side2 >= side3) and (side1 + side3 >= side2) and (side2 + side3 >= side1):  #condition to check if any of the three lengths is greater than the sum of other two.
     print("Yes,Triangle Can Be formed.")
 else:
     print("No, Triangle Cannot be formed.")
