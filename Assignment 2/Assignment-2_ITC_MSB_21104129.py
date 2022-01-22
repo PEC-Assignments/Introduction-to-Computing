@@ -64,7 +64,7 @@ cgpa = input("Enter your CGPA:")    #cgpa = CGPA-Central Grade Point Average.
 print()
 
 #Printing out the strings after doing string formatting.
-print("Hey, ",name," Here!\nMy SID is",sid,"\nI am from",dept_name,"department and my CGPA is",cgpa)
+print("Hey,",name,"Here!\nMy SID is",sid,"\nI am from",dept_name,"department and my CGPA is",cgpa)
 
 print("-"*80)
 

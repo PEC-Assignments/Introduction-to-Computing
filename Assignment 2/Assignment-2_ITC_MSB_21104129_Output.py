@@ -21,7 +21,7 @@ Enter your SID:21104129
 Enter the name of your department:Electrical Engineering
 Enter your CGPA:9.2
 
-Hey,  Manobal Singh Bagady  Here!
+Hey, Manobal Singh Bagady Here!
 My SID is 21104129 
 I am from Electrical Engineering department and my CGPA is 9.2
 --------------------------------------------------------------------------------
