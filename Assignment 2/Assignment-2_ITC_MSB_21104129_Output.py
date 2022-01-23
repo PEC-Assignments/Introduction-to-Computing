@@ -5,13 +5,13 @@ Type "help", "copyright", "credits" or "license()" for more information.
 
 String Operations
 
-The original Sting is: Python is a case sensitive language
+The original Sting is: "Python is a case sensitive language"
 	length of the given string: 35
-	String in reversed order is: egaugnal evitisnes esac a si nohtyP
-	New String: a case sensitive
-	String after the changes: Python is object oriented language
+	String in reversed order is: "egaugnal evitisnes esac a si nohtyP"
+	New String: "a case sensitive"
+	String after the changes: "Python is object oriented language"
 	Index of "a" in the given string: 10
-	String after removing the white spaces: Pythonisacasesensitivelanguage
+	String after removing the white spaces: "Pythonisacasesensitivelanguage"
 --------------------------------------------------------------------------------
 
 String Formatting
@@ -19,11 +19,11 @@ String Formatting
 Enter your Name:Manobal Singh Bagady
 Enter your SID:21104129
 Enter the name of your department:Electrical Engineering
-Enter your CGPA:9.2
+Enter your CGPA:8.6
 
-Hey, Manobal Singh Bagady Here!
-My SID is 21104129 
-I am from Electrical Engineering department and my CGPA is 9.2
+Hey Manobal Singh Bagady Here!    
+My SID is 21104129    
+I am from Electrical Engineering department and my CGPA is 8.6.
 --------------------------------------------------------------------------------
 
 Bitwise Operators

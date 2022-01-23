@@ -10,41 +10,41 @@ print("\nString Operations\n")
 #Storing the given string in a variable named string.
 string = "Python is a case sensitive language"
 #Printing out the given string.
-print("The original Sting is:", string)
+print("The original Sting is: \"{0}\"".format(string))
 
     #Part a.
 
 #Finding the length of the given string using length function.
 length = len(string)
 #Printing out the length.
-print("\tlength of the given string:", length)
+print("\tlength of the given string: {0}".format(length))
 
     #Part b.
 
 #Printing out the sting in reverse order using slicing.
-print("\tString in reversed order is:", string[::-1])
+print("\tString in reversed order is: \"{0}\"".format(string[::-1]))
 
     #Part c.
 
 #Slicing the string and storing the value in a new variable named new_string.
 new_string = string[10:26]
 #Printing out the sliced string.
-print("\tNew String:", new_string)
+print("\tNew String: \"{0}\"".format(new_string))
 
     #Part d.
 
 #Replacing words in string using replace command and printing out the changed string.
-print("\tString after the changes:",string.replace("a case sensitive","object oriented"))
+print("\tString after the changes: \"{0}\"".format(string.replace("a case sensitive","object oriented")))
 
     #Print e.
 
 #Finding the index of 'a' and printing it out.
-print("\tIndex of \"a\" in the given string:",string.find("a"))
+print("\tIndex of \"a\" in the given string: {0}".format(string.find("a")))
 
     #Part f.
 
 #Removing the white spaces from the string and printing it out.
-print("\tString after removing the white spaces:",string.replace(" ",""))
+print("\tString after removing the white spaces: \"{0}\"".format(string.replace(" ","")))
 
 print("-"*80)
 
@@ -57,14 +57,16 @@ print("\nString Formatting\n")
 
 #Taking inputs from user.
 name = input("Enter your Name:")
-sid = input("Enter your SID:")  #sid = SID-Student ID
+sid = int(input("Enter your SID:"))  #sid = SID-Student ID
 dept_name = input("Enter the name of your department:") #dept_name = Department Name
-cgpa = input("Enter your CGPA:")    #cgpa = CGPA-Central Grade Point Average.
+cgpa = float(input("Enter your CGPA:"))    #cgpa = CGPA-Central Grade Point Average.
 
 print()
 
 #Printing out the strings after doing string formatting.
-print("Hey,",name,"Here!\nMy SID is",sid,"\nI am from",dept_name,"department and my CGPA is",cgpa)
+print("Hey {0} Here!\
+    \nMy SID is {1}\
+    \nI am from {2} department and my CGPA is {3}.".format(name,sid,dept_name,cgpa))
 
 print("-"*80)
 
@@ -134,7 +136,7 @@ else:   #remaining condition: num3 is greatest.
     greatest = num3
 
 #printing out the greatest of the three numbers.
-print("Greatest of the three numbers entered:",greatest)
+print("Greatest of the three numbers entered: {0}".format(greatest))
 
 print("-"*80)
 
@@ -176,3 +178,4 @@ else:
     
 
 print("-"*80)
+
