@@ -9,6 +9,7 @@ print("\nString Operations\n")
 
 #Storing the given string in a variable named string.
 string = "Python is a case sensitive language"
+
 #Printing out the given string.
 print("The original Sting is: \"{0}\"".format(string))
 
@@ -16,6 +17,7 @@ print("The original Sting is: \"{0}\"".format(string))
 
 #Finding the length of the given string using length function.
 length = len(string)
+
 #Printing out the length.
 print("\tlength of the given string: {0}".format(length))
 
@@ -28,6 +30,7 @@ print("\tString in reversed order is: \"{0}\"".format(string[::-1]))
 
 #Slicing the string and storing the value in a new variable named new_string.
 new_string = string[10:26]
+
 #Printing out the sliced string.
 print("\tNew String: \"{0}\"".format(new_string))
 
@@ -63,7 +66,7 @@ cgpa = float(input("Enter your CGPA:"))    #cgpa = CGPA-Central Grade Point Aver
 
 print()
 
-#Printing out the strings after doing string formatting.
+#Printing out the strings after doing string formatting using .format() command.
 print("Hey {0} Here!\
     \nMy SID is {1}\
     \nI am from {2} department and my CGPA is {3}.".format(name,sid,dept_name,cgpa))
@@ -128,11 +131,18 @@ num3 = float(input("Enter your third number:"))
 #num = number
 
 #Using conditional statements to compare the numbers entered by the user.
-if (num1 >= num2) and (num1 >= num3):   #condition to check if num1 is greatest.
-    greatest = num1 #greatest is a variable used to store the greatest number.
-elif (num2 >= num1) and (num2 >= num3): #condition to check if num2 is greatest.
+
+#condition to check if num1 is greatest.
+if (num1 >= num2) and (num1 >= num3):
+    #greatest is a variable used to store the greatest number.
+    greatest = num1
+
+#condition to check if num2 is greatest.
+elif (num2 >= num1) and (num2 >= num3):
     greatest = num2
-else:   #remaining condition: num3 is greatest.
+
+#remaining condition: num3 is greatest.
+else:
     greatest = num3
 
 #printing out the greatest of the three numbers.
@@ -151,9 +161,13 @@ print("\nString Comparison\n")
 user_input = input("Enter the String:")
 
 #Using conditional statement compareing "name" string with user_input.
-if "name" in user_input:    #condition to check if "name" present in user_input.
+
+#condition to check if "name" present in user_input.
+if "name" in user_input:
     print("Yes")    #printing out "Yes".
-else:   #condition to check if "name" is not present in user_input.
+
+#condition to check if "name" is not present in user_input.
+else:
     print("No") #Printing out "No".
 
 print("-"*80)
@@ -170,12 +184,21 @@ side1 = input("Enter the Length of first side:")
 side2 = input("Enter the Length of second side:")
 side3 = input("Enter the Length of third side:")
 
+#Converting to int datatype.
+side1=int(side1)
+side2=int(side2)
+side3=int(side3)
+
 #Using conditional statements to put a condition on sides of triangle.
-if (int(side1) + int(side2) <= int(side3)) or (int(side1) + int(side3) <= int(side2)) or (int(side2) + int(side3) <= int(side1)):  #condition to check if any of the three lengths is greater than the sum of other two.
+
+#condition to check if any of the three lengths is greater than the sum of other two.
+if (side1 + side2 <= side3) or (side1 + side3 <= side2) or (side2 + side3 <= side1):
     print("No, Triangle Cannot be formed.")
+
 else:
     print("Yes,Triangle Can Be formed.")
     
-
 print("-"*80)
+
+
 
