@@ -34,15 +34,15 @@ b: 10
 a & b: 8
 a | b: 58
 a ^ b: 50
-Left shifting both a and b by 2 bits: 224 40
-Right shifting a by 2 and b with 4 bits: 14 0
+Left shifting both a and b by 2 bits: a-224,b-40
+Right shifting a by 2 and b with 4 bits: a-14,b-0
 --------------------------------------------------------------------------------
 
 Greatest Number Calculator
 
 Enter your first number:3
 Enter your second number:9
-Enter your third number:5
+Enter your third number:6
 Greatest of the three numbers entered: 9.0
 --------------------------------------------------------------------------------
 

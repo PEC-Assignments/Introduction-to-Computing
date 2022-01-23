@@ -108,12 +108,12 @@ print("a ^ b:",a ^ b)
     #part d.
     #left bit shifting.
 
-print("Left shifting both a and b by 2 bits:",a << 2,b << 2)
+print("Left shifting both a and b by 2 bits: a-{0},b-{1}".format(a << 2,b << 2))
 
     #print e.
     #right bit shifting.
 
-print("Right shifting a by 2 and b with 4 bits:",a >> 2,b >> 4)
+print("Right shifting a by 2 and b with 4 bits: a-{0},b-{1}".format(a >> 2,b >> 4))
 
 print("-"*80)
 
