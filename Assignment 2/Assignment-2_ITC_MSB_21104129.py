@@ -11,7 +11,7 @@ print("\nString Operations\n")
 string = "Python is a case sensitive language"
 
 # Printing out the given string.
-print("The original Sting is: \"{0}\"".format(string))
+print("The original Sting is: \"{}\"".format(string))
 
 # Part a.
 
@@ -19,7 +19,7 @@ print("The original Sting is: \"{0}\"".format(string))
 length = len(string)
 
 # Printing out the length.
-print("\tlength of the given string: {0}".format(length))
+print("\tlength of the given string:",length)
 
 # Part b.
 
@@ -42,7 +42,7 @@ print("\tString after the changes: \"{0}\"".format(string.replace("a case sensit
 # Print e.
 
 # Finding the index of 'a' and printing it out.
-print("\tIndex of \"a\" in the given string: {0}".format(string.find("a")))
+print("\tIndex of \"a\" in the given string:",string.find("a"))
 
 # Part f.
 
@@ -143,7 +143,7 @@ else:
     greatest = num3
 
 # printing out the greatest of the three numbers.
-print("Greatest of the three numbers entered: {0}".format(greatest))
+print("Greatest of the three numbers entered:",greatest)
 
 print("-" * 80)
 
