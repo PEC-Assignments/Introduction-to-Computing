@@ -187,7 +187,7 @@ side3 = int(side3)
 # Using conditional statements to put a condition on sides of triangle.
 
 # condition to check if any of the three lengths is greater than the sum of other two.
-if (side1 + side2 <= side3) or (side1 + side3 <= side2) or (side2 + side3 <= side1):
+if (side3 >= side1 + side2) or (side2 >= side1 + side3) or (side1 >= side2 + side3):
     print("No, Triangle Cannot be formed.")
 
 else:
