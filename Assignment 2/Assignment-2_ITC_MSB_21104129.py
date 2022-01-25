@@ -20,19 +20,19 @@ print("\tlength of the given string:",length)
     # Part b.
 
 # Reverseing the order using string slicing.
-print("\tString in reversed order is: \"{0}\"".format(string[::-1]))
+print("\tString in reversed order is: \"{}\"".format(string[::-1]))
 
     # Part c.
 
 # Slicing and storing in a new variable new_string.
 new_string = string[10:26]
 
-print("\tNew String: \"{0}\"".format(new_string))
+print("\tNew String: \"{}\"".format(new_string))
 
     # Part d.
 
 # Replacing words in using replace command.
-print("\tString after the changes: \"{0}\"".format(string.replace("a case sensitive", "object oriented")))
+print("\tString after the changes: \"{}\"".format(string.replace("a case sensitive", "object oriented")))
 
     # Print e.
 
@@ -42,7 +42,7 @@ print("\tIndex of \"a\" in the given string:",string.find("a"))
     # Part f.
 
 # Removing the white spaces using .replace.
-print("\tString after removing the white spaces: \"{0}\"".format(string.replace(" ", "")))
+print("\tString after removing the white spaces: \"{}\"".format(string.replace(" ", "")))
 
 print("-" * 80)
 
