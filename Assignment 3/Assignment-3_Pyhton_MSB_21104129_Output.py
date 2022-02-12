@@ -7,9 +7,9 @@ Type "help", "copyright", "credits" or "license()" for more information.
 
 Enter the String:Manobal Singh Bagady manobal SINGH BaGaDy
 
-Occurrences of singh in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
-
 Occurrences of manobal in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
+
+Occurrences of singh in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
 
 Occurrences of bagady in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
 
@@ -65,80 +65,6 @@ Do you want to enter another value?[y/n]:n
 
 Student Details stored in dictionary:
 
-SID			Names
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-21104129		Manobal Singh Bagady
-21104094		Vaibhav Thakkar
-21104050		Sahil Singh Bhandari
-
-{21104129: 'Manobal Singh Bagady', 21104050: 'Sahil Singh Bhandari', 21104094: 'Vaibhav Thakkar'}
-
-{21104050: 'Sahil Singh Bhandari', 21104094: 'Vaibhav Thakkar', 21104129: 'Manobal Singh Bagady'}
-
-Enter the SID which you want to search:
-= RESTART: D:\DEV\PEC\Github Repositories\Introduction to Computing\Assignment 3\Assignment-3_Pyhton_MSB_21104129.py
-
-	Occurrence Counter
-
-Enter the String:Manobal Singh Bagady manobal SINGH BaGaDy
-
-Occurrences of bagady in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
-
-Occurrences of manobal in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
-
-Occurrences of singh in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
-
---------------------------------------------------------------------------------
-
-	Next Date Finder.
-
-Enter the Day:12
-Enter the Month:2
-Enter the year:2022
-
-The next Date is : 13/2/2022
---------------------------------------------------------------------------------
-
-	Tuple of squares maker.
-
-Enter the list of numbers(Enter the numbers separated by space):5 8 11 56
-
-[(5, 25), (8, 64), (11, 121), (56, 3136)]
---------------------------------------------------------------------------------
-
-	Grade Calculator.
-
-Enter the Grade Point:9
-
-Your Grade is A, and Performance is Excellent
---------------------------------------------------------------------------------
-
-	Pattern Printer.
-
-ABCDEFGHIJK
- ABCDEFGHI 
-  ABCDEFG  
-   ABCDE   
-    ABC    
-     A     
---------------------------------------------------------------------------------
-
-	Student Details Manager
-
-Enter the SID:21104129
-Enter the name:Manobal Singh Bagady
-
-Do you want to enter another value?[y/n]:y
-Enter the SID:21104094
-Enter the name:Vaibhav Thakkar
-
-Do you want to enter another value?[y/n]:y
-Enter the SID:21104050
-Enter the name:Sahil Singh Bhandari
-
-Do you want to enter another value?[y/n]:n
-
-Student Details stored in dictionary:
 SID			Names
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 21104129		Manobal Singh Bagady

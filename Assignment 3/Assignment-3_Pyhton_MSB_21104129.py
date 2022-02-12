@@ -209,7 +209,7 @@ ans = 'y'
 while ans == 'y':
     dict_adder(student_details_dct)
 
-    ques = input("\nDo you want to enter another value?[y/n]:")
+    ques = input("\nDo you want to enter another value?[y/n]:").lower()
 
     # If user enters 'y' the loop continues.
     if ques == 'y':
