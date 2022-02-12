@@ -224,7 +224,7 @@ while ans == 'y':
 '''Printing out all the details of the students entered in the dictionary.'''
 
 print(f"\nStudent Details stored in dictionary:")
-print("SID\t\t\tNames")
+print("\nSID\t\t\tNames")
 print('-*'*20)
 for k in student_details_dct:
     print(f"{k}\t\t{student_details_dct[k]}")
