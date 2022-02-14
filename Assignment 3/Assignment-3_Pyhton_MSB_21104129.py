@@ -173,7 +173,7 @@ print("-" * 80)
 
 print("\n\tPattern Printer.\n")
 
-# Creating a list of characters from A to B.
+# Creating a list of characters from A to K.
 chr_lst = [chr(j) for j in range(ord('A'), ord('K') + 1)]
 
 # Printing out the pattern by using .join and .center command.
