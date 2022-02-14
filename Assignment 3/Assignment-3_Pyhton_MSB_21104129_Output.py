@@ -7,9 +7,9 @@ Type "help", "copyright", "credits" or "license()" for more information.
 
 Enter the String:Manobal Singh Bagady manobal SINGH BaGaDy
 
-Occurrences of manobal in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
-
 Occurrences of singh in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
+
+Occurrences of manobal in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
 
 Occurrences of bagady in "Manobal Singh Bagady manobal SINGH BaGaDy": 2
 
@@ -71,9 +71,9 @@ SID			Names
 21104094		Vaibhav Thakkar
 21104050		Sahil Singh Bhandari
 
-{21104129: 'Manobal Singh Bagady', 21104050: 'Sahil Singh Bhandari', 21104094: 'Vaibhav Thakkar'}
+Dictionary Sorted according to names: {21104129: 'Manobal Singh Bagady', 21104050: 'Sahil Singh Bhandari', 21104094: 'Vaibhav Thakkar'}
 
-{21104050: 'Sahil Singh Bhandari', 21104094: 'Vaibhav Thakkar', 21104129: 'Manobal Singh Bagady'}
+Dictionary Sorted according to SIDs: {21104050: 'Sahil Singh Bhandari', 21104094: 'Vaibhav Thakkar', 21104129: 'Manobal Singh Bagady'}
 
 Enter the SID which you want to search:21104129
 Name of the student with SID:21104129 is: "Manobal Singh Bagady"

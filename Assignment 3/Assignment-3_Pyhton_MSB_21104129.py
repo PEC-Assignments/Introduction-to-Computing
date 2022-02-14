@@ -191,7 +191,28 @@ print("-" * 80)
 # Question 6.
 '''Program to add student details in a dictionary and performing operations on that dictionary.'''
 
-print("\n\tStudent Details Manager\n")
+
+# Creating a function to sort a dictionary according to its values.
+def dict_sort_values(d):
+    lst = list(d.values())
+    lst.sort()
+    Sort_by_Values = {}
+    for i in lst:
+        temp = list(d.keys())[list(d.values()).index(i)]
+        Sort_by_Values[temp] = d[temp]
+
+    return Sort_by_Values
+
+
+# Creating a function to sort a dictionary according to it's keys.
+def dict_sort_keys(d):
+    lst = list(d.keys())
+    lst.sort()
+    Sort_by_Keys = {}
+    for i in lst:
+        Sort_by_Keys[i] = d[i]
+
+    return Sort_by_Keys
 
 
 # Defining a function to repeatedly take inputs into a dictionary.
@@ -200,6 +221,8 @@ def dict_adder(d):
     value = input("Enter the name:")
     d[key] = value
 
+
+print("\n\tStudent Details Manager\n")
 
 # Creating an empty dictionary.
 student_details_dct = {}
@@ -225,25 +248,19 @@ while ans == 'y':
 
 print(f"\nStudent Details stored in dictionary:")
 print("\nSID\t\t\tNames")
-print('-*'*20)
+print('-*' * 20)
 for k in student_details_dct:
     print(f"{k}\t\t{student_details_dct[k]}")
 
 # Part b.
 '''Sorting the Dictionary according to names.'''
 
-# Using sorted() function to sort the dictionary.
-dict_sortedbynames = {k: v for k, v in sorted(student_details_dct.items(), key=lambda v: v[1])}
-print()
-print(dict_sortedbynames)
+print(f"\nDictionary Sorted according to names: {dict_sort_values(student_details_dct)}")
 
 # Part c.
 '''Sorting the Dictionary according to SIDs.'''
 
-# Using sorted() function to sort the dictionary.
-dict_sortedbySID = {k: v for k, v in sorted(student_details_dct.items())}
-print()
-print(dict_sortedbySID)
+print(f"\nDictionary Sorted according to SIDs: {dict_sort_keys(student_details_dct)}")
 
 # Part d.
 '''Searching the details of the students using SID.'''
