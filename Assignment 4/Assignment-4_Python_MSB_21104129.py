@@ -395,4 +395,3 @@ else:
     print("Their Friendship is Fake.")
 
 print("-" * 80)
-
