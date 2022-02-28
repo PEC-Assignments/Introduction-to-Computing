@@ -277,7 +277,8 @@ class Students:
 manobal = Students("Manobal Singh Bagady", 21104129)
 
 # Printing out values assigned to instance variables.
-print(f"Name ={manobal.name}\nRoll_no = {manobal.roll_no}")
+print("Details of object named manobal:")
+print(f"Name = {manobal.name}\nRoll_no = {manobal.roll_no}")
 
 print("-" * 80)
 
@@ -319,8 +320,8 @@ class Employees:
 
 # Creating instances of class Employees.
 Mehak = Employees("Mehak", 40000)
-Ashok = Employees("Ashok", 5000)
-Viren = Employees("Ashok", 60000)
+Ashok = Employees("Ashok", 50000)
+Viren = Employees("Viren", 60000)
 
 details_printer()
 
@@ -358,7 +359,13 @@ print("\n\tFRIENDSHIP TRUTHFULNESS TESTER\n")
 # Taking inputs of words entered by both the people.
 George_word = input("Enter the word entered by George:").lower()
 
+# Removing whitespaces from George_word.
+George_word.strip()
+
 Barbie_word = input("Enter the word entered by Barbie:").lower()
+ 
+# Removing whitespaces from Barbie_word.
+Barbie_word.strip()
 
 # Converting both the words to list.
 George_list = list(George_word)

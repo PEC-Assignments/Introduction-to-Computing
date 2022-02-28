@@ -80,7 +80,8 @@ Hash value of max value : 6
 
 	__init__ AND __del__ FUNCTIONS
 
-Name =Manobal Singh Bagady
+Details of object named manobal:
+Name = Manobal Singh Bagady
 Roll_no = 21104129
 
 All the objects deleted.
@@ -94,8 +95,8 @@ All the objects deleted.
 Name		Salary
 -*-*-*-*-*-*-*-*-*-*-*-*
 Mehak		40000
-Ashok		5000
-Ashok		60000
+Ashok		50000
+Viren		60000
 _________________________
 
 Part a : updating records
@@ -106,8 +107,8 @@ Part a : updating records
 Name		Salary
 -*-*-*-*-*-*-*-*-*-*-*-*
 Mehak		70000
-Ashok		5000
-Ashok		60000
+Ashok		50000
+Viren		60000
 _________________________
 
 Part b : Deleting Records
@@ -118,7 +119,7 @@ Part b : Deleting Records
 Name		Salary
 -*-*-*-*-*-*-*-*-*-*-*-*
 Mehak		70000
-Ashok		5000
+Ashok		50000
 --------------------------------------------------------------------------------
 
 	FRIENDSHIP TRUTHFULNESS TESTER
