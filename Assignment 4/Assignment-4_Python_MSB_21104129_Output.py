@@ -20,7 +20,6 @@ Move the 1st disk : from A rod --> C rod.
 
 	PASCAL's TRIANGLE
 
-
 	Recursive Procedure
 
 Enter the number of rows you want:7
@@ -54,11 +53,11 @@ Remainder : 2
 
 Part a
 
-Checking if the function is callable : It's callable
+Checking if the function is callable? : True
 
 Part b
 
-All the values are non-zero.
+All values are non-zeros? : True
 
 Part c
 
@@ -66,25 +65,30 @@ Filtered out values which are greater than 4 : [5, 6]
 
 Part d
 
-Converted Set : {5, 6}
+Converted Set : {1, 2, 4, 5, 6}
 
 Part e
 
-Immutable Set : frozenset({5, 6})
+Immutable Set : frozenset({1, 2, 4, 5, 6})
 
 Part f
 
 Maximum value : 6
 Hash value of max value : 6
+Hash value of max value (as string) : 2409629572546556373
 --------------------------------------------------------------------------------
 
 	__init__ AND __del__ FUNCTIONS
 
-Details of object named manobal:
+Enter the Name of Student:Manobal Singh Bagady
+Enter the roll no of Manobal Singh Bagady :21104129
+Constructor Called, Object Created.
+
+Details of object named student1:
 Name = Manobal Singh Bagady
 Roll_no = 21104129
 
-All the objects deleted.
+Destructor Called, Object Destroyed.
 --------------------------------------------------------------------------------
 
 	EMPLOYEE DETAILS MANAGER

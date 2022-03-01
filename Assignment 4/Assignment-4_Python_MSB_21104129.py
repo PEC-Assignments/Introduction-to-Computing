@@ -9,11 +9,11 @@ print("\n\tTOWER OF HANOI\n")
 
 def tower_of_hanoi(n, from_, to, between):
     """ Defining a recursive function to find solution of TOWER OF HANOI puzzle.
-        
             This function will print out all the steps needed
             to solve the puzzle.
-        from_ = the rod from the puzzle needs to start, 
-        to = the rod where puzzle needs to end, 
+
+        from_ = the rod from the puzzle needs to start,
+        to = the rod where puzzle needs to end,
         between = the rod in between which will act as an aux """
 
     # If the number of disks reaches 0, the function returns nothing.
@@ -27,8 +27,10 @@ def tower_of_hanoi(n, from_, to, between):
     suffix = ""
     if n == 1:
         suffix = "st"
+
     elif n == 2:
         suffix = "nd"
+
     elif n == 3:
         suffix = "rd"
 
@@ -42,19 +44,23 @@ def tower_of_hanoi(n, from_, to, between):
 # Defining the number of disks.
 num = 3
 
-# Taking inputs of from rod and to rod from user.
-from_rod = input("Enter the rod from which to start[A/B/C]:")
-to_rod = input("Enter the rod to which the disks need to be moved[A/B/C]:")
+while True:
+    # Taking inputs of from rod and to rod from user.
+    from_rod = input("Enter the rod from which to start[A/B/C]:").upper()
+    to_rod = input("Enter the rod to which the disks need to be moved[A/B/C]:").upper()
+
+    # Creating a list containing names of all the rods.
+    rod_list = ['A', 'B', 'C']
+
+    # If input from the user is wrong printing out Error.
+    if from_rod not in rod_list or to_rod not in rod_list:
+        print("\nError!:rods entered are not valid.")
+        continue
+
+    else:
+        break
 
 print()
-
-# Creating a list containing names of all the rods.
-rod_list = ['A', 'B', 'C']
-
-# If input from the user is wrong printing out Error.
-if from_rod not in rod_list or to_rod not in rod_list:
-    print("Error!:rods entered are not valid.")
-    exit()
 
 # Finding out the remaining rod using loops and conditional statements.
 remaining_rod = ""
@@ -70,14 +76,16 @@ tower_of_hanoi(num, from_rod, to_rod, remaining_rod)
 print("-" * 80)
 
 
+
+
 # Question 2.
-"""Program to print Pascal's triangle using both recursive and iterative procedures."""
+'''Program to print Pascal's triangle using both recursive and iterative procedures.'''
 
 print("\n\tPASCAL's TRIANGLE\n")
 
 # Recursive Procedure.
 
-print("\n\tRecursive Procedure\n")
+print("\tRecursive Procedure\n")
 
 
 def pascals_triangle(n):
@@ -106,13 +114,17 @@ def pascals_triangle(n):
         return result
 
 
-# Taking input of number of rows from the user.
-no_of_rows = int(input("Enter the number of rows you want:"))
+while True:
+    # Taking input of number of rows from the user.
+    no_of_rows = int(input("Enter the number of rows you want:"))
 
-# Condition to check if the no of rows entered are positive.
-if no_of_rows < 0:
-    print("Error!: Number of rows cannot be -ve.")
-    exit()
+    # Condition to check if the no of rows entered are positive.
+    if no_of_rows < 0:
+        print("\nError!: Number of rows cannot be -ve.")
+        continue
+
+    else:
+        break
 
 # Printing out the array containing the pascal's triangle as string.
 arr = pascals_triangle(no_of_rows)
@@ -130,13 +142,17 @@ for i in arr:
 
 print("\n\tIterative Procedure\n")
 
-# Taking input of number of rows from the user.
-no_of_rows = int(input("Enter the number of rows you want:"))
+while True:
+    # Taking input of number of rows from the user.
+    no_of_rows = int(input("Enter the number of rows you want:"))
 
-# Condition to check if the no of rows entered are positive.
-if no_of_rows < 0:
-    print("Error!: Number of rows cannot be -ve.")
-    exit()
+    # Condition to check if the no of rows entered are positive.
+    if no_of_rows < 0:
+        print("\nError!: Number of rows cannot be -ve.")
+        continue
+
+    else:
+        break
 
 # Creating an initial array containing first row.
 arr = [[1]]
@@ -166,16 +182,26 @@ for i in arr:
 print("-" * 80)
 
 
+
+
 # Question 3.
-"""Taking input and printing out the quotient and remainder."""
+'''Taking input and printing out the quotient and remainder.'''
 
 print("\n\tQUOTIENT AND REMAINDER\n")
 
 # Taking inputs of both integers from user.
 int_1 = int(input("Enter the first integer:"))
-int_2 = int(input("Enter the second integer:"))
 
-result = divmod(int_1, int_2)
+while True:
+    int_2 = int(input("Enter the second integer:"))
+    if int_2 == 0:
+        print("\nError!:denominator cannot be 0.")
+        continue
+
+    else:
+        break
+
+result = list(divmod(int_1, int_2))
 
 # Printing out the quotient and remainder.
 print(f"\nQuotient : {result[0]}\nRemainder : {result[1]}")
@@ -185,40 +211,36 @@ print(f"\nQuotient : {result[0]}\nRemainder : {result[1]}")
 
 print("\nPart a\n")
 
-print("Checking if the function is callable :", end=" ")
-print("It's callable") if callable(divmod) else print("It's not callable")
+print("Checking if the function is callable? :", callable(divmod))
 
 # Part b.
 '''Checking all the values if they are zero.'''
 
 print("\nPart b\n")
 
-if 0 in [int_1, int_2] + list(result):
-    print("All the values are not non-zero.")
+# Creating a list of all the values.
+values = [int_1, int_2] + result
 
-elif 0 not in [int_1, int_2] + list(result):
-    print("All the values are non-zero.")
+print(f"All values are non-zeros? : {all(values)}")
 
 # Part c.
 
 print("\nPart c\n")
 '''Filtering out values greater than 4.'''
 
-# Creating a list of result values.
-result_list = list(result)
-
 # Appending the given values into the list.
 for i in (4, 5, 6):
-    result_list.append(i)
+    result.append(i)
 
-# Filtering out values greater than 4.
-filtered_list = []
-for j in result_list:
-    if j > 4:
-        filtered_list.append(j)
 
-# Printing out filtered-out values.
-print(f"Filtered out values which are greater than 4 : {filtered_list}")
+def greater_than_4(n):
+    if n > 4:
+        return True
+    else:
+        return False
+
+
+print("Filtered out values which are greater than 4 :", list(filter(greater_than_4, result)))
 
 # Part d.
 '''Converting the result into set datatype.'''
@@ -226,7 +248,7 @@ print(f"Filtered out values which are greater than 4 : {filtered_list}")
 print("\nPart d\n")
 
 # Converting the datatype to set.
-converted_set = set(filtered_list)
+converted_set = set(result)
 print(f"Converted Set : {converted_set}")
 
 # Part e.
@@ -238,16 +260,22 @@ print("\nPart e\n")
 print("Immutable Set :", frozenset(converted_set))
 
 # Part f.
+'''Finding max and hash value.'''
 
 print("\nPart f\n")
 
+max_val = max(frozenset(converted_set))
+
 # Printing out the max value.
-print("Maximum value :", max(converted_set))
+print("Maximum value :", max_val)
 
 # Printing out the hash value of max value.
-print("Hash value of max value :", hash(max(converted_set)))
+print("Hash value of max value :", hash(max_val))
+print(f"Hash value of max value (as string) : {hash(str(max_val))}")
 
 print("-" * 80)
+
+
 
 
 # Question 4.
@@ -265,22 +293,30 @@ class Students:
 
         self.name = _name
         self.roll_no = _roll_no
-
+        print("Constructor Called, Object Created.")
+    
     def __del__(self):
         """Using __del__ function ot delete
             all the created instances."""
 
-        print("\nAll the objects deleted.")
+        print("\nDestructor Called, Object Destroyed.")
 
 
-# Creating an instance named manobal.
-manobal = Students("Manobal Singh Bagady", 21104129)
+# Creating an instance named student1.
+Name = input("Enter the Name of Student:")
+Roll_No = int(input(f"Enter the roll no of {Name} :"))
+
+student1 = Students(Name, Roll_No)
 
 # Printing out values assigned to instance variables.
-print("Details of object named manobal:")
-print(f"Name = {manobal.name}\nRoll_no = {manobal.roll_no}")
+print("\nDetails of object named student1:")
+print(f"Name = {student1.name}\nRoll_no = {student1.roll_no}")
+
+del student1
 
 print("-" * 80)
+
+
 
 
 # Question 5.
@@ -314,9 +350,7 @@ class Employees:
     def __del__(self):
         """Deleting all the instances after
             completion of the program."""
-
         pass
-
 
 # Creating instances of class Employees.
 Mehak = Employees("Mehak", 40000)
@@ -351,45 +385,53 @@ print(f"{Ashok.Name}\t\t{Ashok.Salary}")
 print("-" * 80)
 
 
+
+
 # Question 6.
-"""Program to check Friendship of Barbie and George."""
+'''Program to check Friendship of Barbie and George.'''
 
 print("\n\tFRIENDSHIP TRUTHFULNESS TESTER\n")
 
-# Taking inputs of words entered by both the people.
-George_word = input("Enter the word entered by George:").lower()
+while True:
+    # Taking inputs of words entered by both the people.
+    George_word = input("Enter the word entered by George:").lower()
 
-# Removing whitespaces from George_word.
-George_word.strip()
+    # Removing whitespaces from George_word.
+    George_word.strip()
 
-Barbie_word = input("Enter the word entered by Barbie:").lower()
- 
-# Removing whitespaces from Barbie_word.
-Barbie_word.strip()
+    Barbie_word = input("Enter the word entered by Barbie:").lower()
 
-# Converting both the words to list.
-George_list = list(George_word)
-Barbie_list = list(Barbie_word)
+    # Removing whitespaces from Barbie_word.
+    Barbie_word.strip()
 
-# Sorting both the lists.
-George_list.sort()
-Barbie_list.sort()
+    # Converting both the words to list.
+    George_list = list(George_word)
+    Barbie_list = list(Barbie_word)
 
-print()
+    # Sorting both the lists.
+    George_list.sort()
+    Barbie_list.sort()
 
-# If the length of both the words is not same then printing out error.
-if len(George_word) != len(Barbie_list):
-    print("Error!: The letters of both words are not exactly same.")
-    exit()
+    print()
 
-# If George enters Empty word then printing out error.
-elif len(George_word) == 0:
-    print("Error!: George's word cannot be empty.")
+    # If Barbie Fails to form a word giving result: fake friendship.
+    if len(Barbie_word) == 0:
+        print("Result:")
+        print("Their Friendship is Fake.")
+        exit()
 
-# If Barbie Fails to form a word giving result: fake friendship.
-elif len(Barbie_word) == 0:
-    print("Result:")
-    print("Their Friendship is Fake.")
+    # If the length of both the words is not same then printing out error.
+    elif len(George_word) != len(Barbie_list):
+        print("Error!: The letters of both words are not exactly same.")
+        continue
+
+    # If George enters Empty word then printing out error.
+    elif len(George_word) == 0:
+        print("Error!: George's word cannot be empty.")
+        continue
+
+    else:
+        break
 
 # If length and letters of both the lists are equal-> giving result: True friendship.
 if George_list == Barbie_list:
