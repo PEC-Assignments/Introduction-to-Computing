@@ -1,19 +1,15 @@
 *.pdf
-*.gitignore
-
 Assignment\ 1/Sidak/
-Assignment 3/Question 1 (Unrefined Approach).py
 
+Assignment 3/Question 1 (Unrefined Approach).py
 Assignment 4/test.py
+*.gitignore
 Assignment 4/Q4.py
 
-<<<<<<< HEAD
 Assignment 5/test Q1.py
-/Assignment 5/test Q2.py
-/Assignment 5/test.py
-/Assignment 5/test Q3.py
-/Assignment 5/test Q4.py
-/Assignment 5/test Q5.py
+Assignment 5/test Q2.py
+Assignment 5/test Q3.py
+Assignment 5/test Q4.py
+Assignment 5/test Q5.py
+Assignment 5/test.py
 !Assignment 5/GUI output.pdf
-=======
->>>>>>> changes
