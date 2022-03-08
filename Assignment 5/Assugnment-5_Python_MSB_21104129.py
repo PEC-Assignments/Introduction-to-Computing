@@ -564,7 +564,7 @@ else:
 '''counting the occurrence of the element found above.'''
 print("\n\tPart c : counting occurrences\n")
 
-num = arr.count(fnd)                                                                                                    # finding number of occurrence using .count
+num = arr.count(fnd)                                                                                                    # Finding number of occurrence using .count
 
 print(f"Number of occurrences of element {fnd} is : {num}")
 
